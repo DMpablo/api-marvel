@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+
+.containerCards{
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+
+}
+
+::-webkit-scrollbar{
+    width: 4px;
+    height: 4px;
+    background-color: $color-black;
+}
+::-webkit-scrollbar-track{
+    border-radius: 12px;
+    background-color: $color-black;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 4px;
+    background-color: #979494;
+    background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
+}

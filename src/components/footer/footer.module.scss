@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.containerFooter{
+    background-color: $color-black2;
+    height: $space-xxl;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        font-size: $space-s;
+        font-weight:$font-weight-m;
+        width: 300px;
+    }
+    a{
+        color: $color-white;
+        text-decoration: none;
+    }
+}

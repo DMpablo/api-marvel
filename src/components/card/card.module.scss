@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.cardContainer{
+    height: 100%;
+    width: auto;
+    color: $color-white;
+    display:block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    p{
+        font-size: $space-l;
+        visibility: hidden;
+    }
+    img{
+        transition: 0.5s;
+        height: 500px;
+        width: auto;
+    }
+  
+}
+.cardContainer:hover{
+    p{
+        transition: 0.3s;
+        top: 50%;  
+        left: 5%;
+        visibility: visible;
+        position: relative; 
+    }
+    img{
+        border-radius: $border-radius;
+        opacity: 0.5;
+        transition: 0.5s;
+    }
+
+}
+
+
+
+
+
+.cardContainer:not(:last-child) { margin-right: 10px; }

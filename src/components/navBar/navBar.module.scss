@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.containerNavbar{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   background-color: $color-black2;
+        img{
+            height: $space-xl;
+            margin: $space-s;
+        }
+    
+}

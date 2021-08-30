@@ -1,0 +1,67 @@
+@import '../../styles/variables.scss';
+.cardContainer{
+    color: $color-white;
+    /* border: azure solid 2px; */
+    .containerOne{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        .containerName{
+            margin: $space-m 0;
+            h2{
+                text-align: center;
+                margin-bottom: $space-m;
+            }
+            img{
+                border-radius: $border-radius;
+                height: 300px;
+            }
+        }
+        .containerDescription{
+            h3{
+                margin-bottom: $space-m;
+            }
+            p{
+                
+                width: 300px;
+            }
+        }
+        @media screen and (min-width: 700px) {
+            background-color: rgb(41, 41, 41);
+    
+            .containerName{
+                img{
+                    height: 50vh;
+                }
+            }
+            .containerDescription{
+                margin-left: $space-m;
+            }
+        }
+    }
+    .containerTwo{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin:$space-xl 0;
+        p{
+            width: 300px;
+            margin-top: $space-m;
+        }
+        .containerComics{
+           width: 300px;
+        }
+        .containerSeries{
+          
+            h3{
+                margin-top: $space-m;
+            }
+            @media screen and (min-width: 700px) {
+                    margin-left: $space-l;
+            }
+        }
+    }
+   
+}
