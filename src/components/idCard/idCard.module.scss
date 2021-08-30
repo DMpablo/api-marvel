@@ -1,6 +1,12 @@
 @import '../../styles/variables.scss';
 .cardContainer{
     color: $color-white;
+    a{
+        margin: 8px;
+        font-size: $space-m;
+        color: $color-white;
+        text-decoration: none;
+    }
     /* border: azure solid 2px; */
     .containerOne{
         display: flex;

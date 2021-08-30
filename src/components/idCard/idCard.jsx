@@ -5,8 +5,8 @@ import style from './idCard.module.scss'
 export const IdCard = ({e})=>{
     const {id} = useParams()
     const heroID = e.find((x)=> x.id === parseInt(id))
-    console.log(heroID);
-    console.log(heroID.comics.collectionURI);
+
+    console.log(heroID.comics.items[0].resourceURI);
 
     return (
       
@@ -23,7 +23,7 @@ export const IdCard = ({e})=>{
                             <h3>Descriptions...</h3>
                             <p>
                                 {heroID.description}
-                            </p>            
+                            </p>         
                         </div>    
                     )
                 }
@@ -54,7 +54,7 @@ export const IdCard = ({e})=>{
                 </div>
 
             </div>
-                
+            <a href={heroID.urls[0].url}>more about {heroID.name}</a>
         </div>
      
     )

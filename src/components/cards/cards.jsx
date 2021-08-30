@@ -9,7 +9,7 @@ export const Cards = ({personajes})=>{
       <title>Api - Marvel</title>
     {
         personajes.map((e)=>(
-        <Card e={e}/>
+        <Card e={e} key={e.id}/>
       ))    
     }
       </div>)
